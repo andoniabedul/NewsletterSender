@@ -124,7 +124,7 @@ public class Newsletter {
 
             // Lo enviamos.
             Transport t = session.getTransport("smtp");
-            t.connect("webtelesur@telesurtv.net", "/W3b-Tele$ur..");
+            t.connect("user", "password");
             t.sendMessage(message, message.getAllRecipients());
 
             // Cierre.
